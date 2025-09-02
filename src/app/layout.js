@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-    title: "Meu Projeto Next.js",
+    title: "Project Recips",
     description: "Projeto para mostrar tudo que eu sei",
     icons: {
         icon: "/icons/favicon.ico",
