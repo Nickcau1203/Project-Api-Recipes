@@ -33,7 +33,7 @@ export default function Page() {
           <Image
             src="/avatar.jpg" // Substitua pelo caminho correto da imagem
             alt="Foto do Aluno"
-            width={15}  // ou 150 //
+            width={150}
             height={150}
             className="rounded-full"
           />
