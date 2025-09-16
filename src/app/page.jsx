@@ -33,12 +33,12 @@ export default function Page() {
           <Image
             src="/avatar.jpg" // Substitua pelo caminho correto da imagem
             alt="Foto do Aluno"
-            width={150}
+            width={15}  // ou 150 //
             height={150}
             className="rounded-full"
           />
         </div>
-        <p className="italic text-lg">"O sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert Collier</p>
+        <p className="italic text-lg"> "A vida é como a culinária: você precisa de um pouco de tempero para torná-la especial." - Maya Angelou</p>
       </div>
 
       {/* Botão para buscar receitas */}
