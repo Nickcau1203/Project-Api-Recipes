@@ -52,9 +52,8 @@ export default function Page() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {receitas.map((receita) => (
           <div className="bg-white p-6 rounded-lg shadow-md" key={receita.id}>
-            <h3 className="font-bold text-lg text-gray-800">Nome da Receita: <span>{receita.title}</span></h3>
             <h3>Nome da Receita: <span>{receita.title}</span></h3>
-            <p className="text-gray-600">Tempo de preparo: {receita.prepTime}</p>
+            <p className="font-bold text-lg text-gray-800">Tempo de preparo: {receita.prepTime}</p>
             <p className="text-gray-600">Ingredientes: {receita.ingredients}</p>
           </div>
         ))}
