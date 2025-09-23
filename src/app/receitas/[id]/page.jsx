@@ -22,7 +22,7 @@ export default function UserDetailsPage({ params }) {
             const response = await axios.get(`https://api.sampleapis.com/recipes/recipes${userId}`);
             setUser(response.data);
         } catch (error) {
-            console.error("Erro ao buscar usuário:", error);
+            console.error("Erro ao buscar receita", error);
             setUser(null);
         } finally {
             setLoading(false);
@@ -40,7 +40,7 @@ export default function UserDetailsPage({ params }) {
             <div className={styles.container}>
                 <div className={styles.loadingWrapper}>
                     <Spin size="large" />
-                    <p className={styles.loadingText}>Carregando detalhes do usuário...</p>
+                    <p className={styles.loadingText}>Carregando detalhes da receita...</p>
                 </div>
             </div>
         );
@@ -50,7 +50,7 @@ export default function UserDetailsPage({ params }) {
         return (
             <div className={styles.container}>
                 <div className={styles.errorWrapper}>
-                    <h3>Usuário não encontrado</h3>
+                    <h3>Receita não encontrada</h3>
                     <Link href="/users">
                         <Button type="primary" icon={<ArrowLeftOutlined />}>
                             Voltar para lista
@@ -69,7 +69,7 @@ export default function UserDetailsPage({ params }) {
                         Voltar
                     </Button>
                 </Link>
-                <h2 className={styles.title}>Detalhes do Usuário</h2>
+                <h2 className={styles.title}>Detalhes da Receita</h2>
             </div>
 
             <div className={styles.contentWrapper}>
